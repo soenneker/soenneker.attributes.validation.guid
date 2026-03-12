@@ -15,7 +15,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\src\Soenneker.Attributes.Validation.Guid.csproj" />
+        <ProjectReference Include="..\..\src\Soenneker.Attributes.Validation.Guid\Soenneker.Attributes.Validation.Guid.csproj" />
     </ItemGroup>
 
     <ItemGroup>
