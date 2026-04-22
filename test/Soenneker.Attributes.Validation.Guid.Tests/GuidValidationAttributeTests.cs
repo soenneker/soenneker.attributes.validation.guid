@@ -1,18 +1,17 @@
-﻿using AwesomeAssertions;
+using AwesomeAssertions;
 using Soenneker.Tests.Unit;
-using Xunit;
 
 namespace Soenneker.Attributes.Validation.Guid.Tests;
 
 public sealed class GuidValidationAttributeTests : UnitTest
 {
-    [Fact]
+    [Test]
     public void Default()
     {
 
     }
 
-    [Fact]
+    [Test]
     public void Valid_guid_should_validate()
     {
         var attribute = new GuidValidationAttribute();
@@ -24,7 +23,7 @@ public sealed class GuidValidationAttributeTests : UnitTest
         result.Should().BeTrue();
     }
 
-    [Fact]
+    [Test]
     public void Null_value_should_not_validate()
     {
         var attribute = new GuidValidationAttribute();
@@ -36,7 +35,7 @@ public sealed class GuidValidationAttributeTests : UnitTest
         result.Should().BeFalse();
     }
 
-    [Fact]
+    [Test]
     public void Invalid_guid_should_not_validate()
     {
         var attribute = new GuidValidationAttribute();
@@ -48,7 +47,7 @@ public sealed class GuidValidationAttributeTests : UnitTest
         result.Should().BeFalse();
     }
 
-    [Fact]
+    [Test]
     public void Empty_guid_should_not_validate()
     {
         var attribute = new GuidValidationAttribute();
