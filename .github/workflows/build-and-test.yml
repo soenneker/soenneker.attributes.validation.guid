@@ -38,7 +38,7 @@ jobs:
         run: dotnet build test/Soenneker.Attributes.Validation.Guid.Tests/Soenneker.Attributes.Validation.Guid.Tests.csproj --configuration Release --no-restore --verbosity minimal
 
       - name: Test
-        run: dotnet test test/Soenneker.Attributes.Validation.Guid.Tests/Soenneker.Attributes.Validation.Guid.Tests.csproj --configuration Release --no-build --no-restore --verbosity minimal
+        run: dotnet test --project test/Soenneker.Attributes.Validation.Guid.Tests/Soenneker.Attributes.Validation.Guid.Tests.csproj --configuration Release --no-build --no-restore --verbosity minimal
 
       - name: Pack
         run: dotnet pack src/Soenneker.Attributes.Validation.Guid/Soenneker.Attributes.Validation.Guid.csproj --configuration Release --no-build --no-restore --output . --verbosity minimal
