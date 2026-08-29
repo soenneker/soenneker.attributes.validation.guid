@@ -58,4 +58,14 @@ public sealed class GuidValidationAttributeTests : UnitTest
 
         result.Should().BeFalse();
     }
+
+    [Test]
+    public void Non_string_value_should_not_validate()
+    {
+        var attribute = new GuidValidationAttribute();
+
+        bool result = attribute.IsValid(123);
+
+        result.Should().BeFalse();
+    }
 }

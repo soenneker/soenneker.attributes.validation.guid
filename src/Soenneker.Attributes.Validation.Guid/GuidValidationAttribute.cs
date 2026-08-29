@@ -27,7 +27,7 @@ public class GuidValidationAttribute : ValidationAttribute
             return new ValidationResult(GetErrorMessage(validationContext?.MemberName));
 
         if (value is not string s)
-            return null;
+            return new ValidationResult(GetErrorMessage(validationContext?.MemberName));
 
         if (s.IsValidPopulatedGuid())
             return ValidationResult.Success;
