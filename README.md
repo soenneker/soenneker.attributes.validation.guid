@@ -1,6 +1,7 @@
 [![](https://img.shields.io/nuget/v/soenneker.attributes.validation.guid.svg?style=for-the-badge)](https://www.nuget.org/packages/soenneker.attributes.validation.guid/)
 [![](https://img.shields.io/github/actions/workflow/status/soenneker/soenneker.attributes.validation.guid/publish-package.yml?style=for-the-badge)](https://github.com/soenneker/soenneker.attributes.validation.guid/actions/workflows/publish-package.yml)
 [![](https://img.shields.io/nuget/dt/soenneker.attributes.validation.guid.svg?style=for-the-badge)](https://www.nuget.org/packages/soenneker.attributes.validation.guid/)
+[![](https://img.shields.io/github/actions/workflow/status/soenneker/soenneker.attributes.validation.guid/codeql.yml?label=CodeQL&style=for-the-badge)](https://github.com/soenneker/soenneker.attributes.validation.guid/actions/workflows/codeql.yml)
 
 # Soenneker.Attributes.Validation.Guid
 
