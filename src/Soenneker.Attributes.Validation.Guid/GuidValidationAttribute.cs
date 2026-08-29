@@ -9,10 +9,10 @@ namespace Soenneker.Attributes.Validation.Guid;
 public class GuidValidationAttribute : ValidationAttribute
 {
     /// <summary>
-    /// Gets error message.
+    /// Builds the validation error message for the specified field.
     /// </summary>
-    /// <param name="fieldName">The field name.</param>
-    /// <returns>The result of the operation.</returns>
+    /// <param name="fieldName">Display name of the field that failed validation.</param>
+    /// <returns>The text produced by get Error Message.</returns>
     public static string GetErrorMessage(string? fieldName)
     {
         if (fieldName == null)
