@@ -3,11 +3,30 @@
 [![](https://img.shields.io/nuget/dt/soenneker.attributes.validation.guid.svg?style=for-the-badge)](https://www.nuget.org/packages/soenneker.attributes.validation.guid/)
 [![](https://img.shields.io/github/actions/workflow/status/soenneker/soenneker.attributes.validation.guid/codeql.yml?label=CodeQL&style=for-the-badge)](https://github.com/soenneker/soenneker.attributes.validation.guid/actions/workflows/codeql.yml)
 
-# ![](https://user-images.githubusercontent.com/4441470/224455560-91ed3ee7-f510-4041-a8d2-3fc093025112.png) Soenneker.Attributes.Validation.Guid
-### A validation attribute that ensures a nullable string is a valid, populated GUID.
+# Soenneker.Attributes.Validation.Guid
 
-## Installation
+A validation attribute that ensures a nullable string is a valid, populated GUID. If the value is null, not a GUID, or all zeros GUID, fails validation.
 
-```
+## Install
+
+```bash
 dotnet add package Soenneker.Attributes.Validation.Guid
 ```
+
+## Quick start
+
+```csharp
+using Soenneker.Attributes.Validation.Guid;
+
+public sealed class Request
+{
+    [GuidValidation]
+    public string? Value { get; init; }
+}
+```
+
+A validation attribute that ensures a nullable string is a valid, populated GUID. If the value is null, not a GUID, or all zeros GUID, fails validation.
+
+## What you get
+
+- `GuidValidationAttribute` — A validation attribute that ensures a nullable string is a valid, populated GUID. If the value is null, not a GUID, or all zeros GUID, fails validation.
